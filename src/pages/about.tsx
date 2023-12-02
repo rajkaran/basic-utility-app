@@ -16,62 +16,23 @@ import List from '@mui/material/List';
 import AppBar from '@mui/material/AppBar';
 
 
-const drawerWidth = 240;
 
-interface Props {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
-  window?: () => Window;
-}
 
-const about = (props: Props) => {
-  const { window } = props;
-  const [mobileOpen, setMobileOpen] = React.useState(true);
-
-  const handleDrawerToggle = () => {
-    setMobileOpen(!mobileOpen);
-  };
-
-  const drawer = (
-    <div>
-      <Toolbar />
-      <Divider />
-      <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-      <Divider />
-      <List>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-    </div>
-  );
-
-  const container = window !== undefined ? () => window().document.body : undefined;
-
+const about = () => {
   return (
     <>
     
       <Box>sdfatsdftstgrgh</Box>
+      <Box>sdfatsdftstgrgh</Box>
+      <Box>sdfatsdftstgrgh</Box>
+      <Box>sdfatsdftstgrgh</Box>
+      <Box>sdfatsdftstgrgh</Box>
+      <Box>sdfatsdftstgrgh</Box>
+      <Box>sdfatsdftstgrgh</Box><Box>sdfatsdftstgrgh</Box>
+      <Box>sdfatsdftstgrgh</Box>
+      <Box>sdfatsdftstgrgh</Box>
+      <Box>sdfatsdftstgrgh</Box>
+      
       
 
 
